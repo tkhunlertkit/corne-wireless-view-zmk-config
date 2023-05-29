@@ -13,7 +13,10 @@
         hold_preferred_behavior: hold_preferred_behavior {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_PREFERRED_BEHAVIOR";
-            bindings = <&mt>;
+            bindings =
+                <&mt>,
+                <&mt>;
+
             #binding-cells = <2>;
             tapping-term-ms = <120>;
         };
