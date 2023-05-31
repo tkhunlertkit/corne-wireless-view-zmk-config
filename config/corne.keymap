@@ -70,9 +70,9 @@
 
         Function {
             bindings = <
-&none  &kp F1   &kp F2   &kp F3   &kp F4   &trans      &kp C_PREVIOUS    &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC  &trans  &trans  &none
-&none  &kp F5   &kp F6   &kp F7   &kp F8   &trans    &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &trans  &trans  &none
-&none  &kp F9  &kp F10  &kp F11  &kp F12  &kp F13          &kp C_NEXT         &kp C_MUTE                &trans  &trans  &trans  &none
+&none  &kp F1   &kp F2   &kp F3   &kp F4   &trans      &kp C_PREVIOUS    &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC  &trans     &trans  &none
+&none  &kp F5   &kp F6   &kp F7   &kp F8   &trans    &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &trans  &kp LG(L)  &none
+&none  &kp F9  &kp F10  &kp F11  &kp F12  &kp F13          &kp C_NEXT         &kp C_MUTE                &trans  &trans     &trans  &none
                          &trans   &trans   &trans              &trans             &trans                &trans
             >;
         };
