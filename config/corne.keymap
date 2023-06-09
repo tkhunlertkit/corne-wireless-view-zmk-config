@@ -72,7 +72,7 @@
 
             bindings = <
 &none     &trans  &trans  &trans  &trans  &trans          &kp HOME     &kp PAGE_UP  &kp PAGE_DOWN          &kp END         &trans  &none
-&none  &kp LCTRL  &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT_ARROW  &kp RA(ENTER)  &none
+&none     &trans  &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT_ARROW  &kp RA(ENTER)  &none
 &none     &trans  &trans  &trans  &trans  &trans            &trans          &trans         &trans           &trans     &kp DELETE  &none
                           &trans   &mo 4  &trans            &trans          &trans         &trans
             >;
