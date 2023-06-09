@@ -41,7 +41,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none             &kp Q  &kp W             &kp E            &kp R             &kp T                 &kp Y        &kp U      &kp I    &kp O                  &kp P  &none
+&none             &kp Q  &kp W             &kp E            &ht LC(R) R             &kp T                 &kp Y        &kp U      &kp I    &kp O                  &kp P  &none
 &none             &kp A  &ht LGUI S      &ht LALT D       &ht LCTRL F         &kp G                 &kp H  &ht RCTRL J  &ht RALT K    &ht RGUI L         &kp SEMI  &none
 &none  &mt LEFT_SHIFT Z  &ht LC(X) X     &ht LC(C) C      &ht LC(V) V      &ht LC(B) B              &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH  &none
                                          &kp TAB       &lt 1 BACKSPACE      &kp ESCAPE           &kp ENTER  &lt 2 SPACE      &mo 3
