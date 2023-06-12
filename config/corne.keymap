@@ -26,7 +26,9 @@
             tapping-term-ms = <220>;
             quick-tap-ms = <150>;
             global-quick-tap;
-            bindings = <&kp>, <&kp>;
+            bindings =
+                <&kp>,
+                <&kp>;
         };
     };
 
@@ -41,10 +43,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none             &kp Q  &kp W             &kp E            &ht LC(R) R    &ht LC(T) T                 &kp Y        &kp U      &kp I    &kp O                  &kp P  &none
-&none             &kp A  &ht LGUI S      &ht LALT D       &ht LCTRL F         &kp G                 &kp H  &ht RCTRL J  &ht RALT K    &ht RGUI L         &kp SEMI  &none
-&none  &mt LEFT_SHIFT Z  &ht LC(X) X     &ht LC(C) C      &ht LC(V) V      &ht LC(B) B              &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH  &none
-                                         &kp TAB       &lt 1 BACKSPACE      &kp ESCAPE           &kp ENTER  &lt 2 SPACE      &mo 3
+&none             &kp Q        &kp W        &kp E      &ht LC(R) R  &ht LC(T) T        &kp Y        &kp U       &kp I       &kp O                  &kp P  &none
+&none             &kp A   &ht LGUI S   &ht LALT D      &ht LCTRL F        &kp G        &kp H  &ht RCTRL J  &ht RALT K  &ht RGUI L               &kp SEMI  &none
+&none  &mt LEFT_SHIFT Z  &ht LC(X) X  &ht LC(C) C      &ht LC(V) V  &ht LC(B) B        &kp N        &kp M   &kp COMMA     &kp DOT  &mt RIGHT_SHIFT SLASH  &none
+                                          &kp TAB  &lt 1 BACKSPACE   &kp ESCAPE    &kp ENTER  &lt 2 SPACE       &mo 3
             >;
         };
 
@@ -56,10 +58,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
-&none           &kp N1       &kp N2     &kp N3      &kp N4       &kp N5       &kp N6         &kp N7        &kp N8                &kp N9                 &kp N0  &none
-&none           &trans     &kp BSLH  &kp MINUS   &kp EQUAL    &kp GRAVE       &trans         &trans       &kp SQT              &kp LBKT      &kp RIGHT_BRACKET  &none
-                                        &trans      &trans       &trans       &trans          &mo 4        &trans
+&none  &kp EXCLAMATION       &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
+&none           &kp N1  &ht LG(LS(S)) N2     &kp N3      &kp N4       &kp N5       &kp N6         &kp N7        &kp N8                &kp N9                 &kp N0  &none
+&none           &trans          &kp BSLH  &kp MINUS   &kp EQUAL    &kp GRAVE       &trans         &trans       &kp SQT              &kp LBKT      &kp RIGHT_BRACKET  &none
+                                             &trans      &trans       &trans       &trans          &mo 4        &trans
             >;
         };
 
@@ -71,10 +73,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none     &trans  &trans  &trans   &trans &trans       &kp HOME        &kp PAGE_UP     &kp PAGE_DOWN          &kp END         &trans  &none
-&none     &trans  &trans  &trans   &trans &trans       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp RA(ENTER)  &none
-&none     &trans  &trans  &trans   &trans &trans       &trans          &trans          &trans           &trans     &kp DELETE  &none
-                          &trans   &mo 4  &trans       &trans          &trans          &trans
+&none  &trans  &trans  &trans  &trans  &trans          &kp HOME     &kp PAGE_UP  &kp PAGE_DOWN          &kp END         &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT_ARROW  &kp RA(ENTER)  &none
+&none  &trans  &trans  &trans  &trans  &trans            &trans          &trans         &trans           &trans     &kp DELETE  &none
+                       &trans   &mo 4  &trans            &trans          &trans         &trans
             >;
         };
 
