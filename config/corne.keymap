@@ -41,7 +41,7 @@
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
+            label = "Base";
             bindings = <
 &none             &kp Q        &kp W        &kp E      &ht LC(R) R  &ht LC(T) T        &kp Y        &kp U       &kp I       &kp O                  &kp P  &none
 &none             &kp A   &ht LGUI S   &ht LALT D      &ht LCTRL F        &kp G        &kp H  &ht RCTRL J  &ht RALT K  &ht RGUI L               &kp SEMI  &none
@@ -56,7 +56,7 @@
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
-
+            label = "Number";
             bindings = <
 &none  &kp EXCLAMATION       &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
 &none           &kp N1  &ht LG(LS(S)) N2     &kp N3      &kp N4       &kp N5       &kp N6         &kp N7        &kp N8                &kp N9                 &kp N0  &none
@@ -71,7 +71,7 @@
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
             // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
-
+            label = "Navigate";
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans          &kp HOME   &kp PAGE_DOWN    &kp PAGE_UP          &kp END         &trans  &none
 &none  &trans  &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT_ARROW  &kp RA(ENTER)  &none
@@ -81,6 +81,7 @@
         };
 
         Function {
+            label = "Function";
             bindings = <
 &none  &kp F1   &kp F2   &kp F3   &kp F4   &trans      &kp C_PREVIOUS    &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC     &trans  &trans  &none
 &none  &kp F5   &kp F6   &kp F7   &kp F8   &trans    &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &kp LG(L)  &trans  &none
@@ -90,6 +91,7 @@
         };
 
         Bluetooth_and_reset {
+            label = "Config";
             bindings = <
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans      &trans  &trans
 &trans        &trans        &trans    &bt BT_PRV    &bt BT_NXT        &trans    &trans  &trans  &trans  &trans      &trans  &trans
