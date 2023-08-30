@@ -73,10 +73,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
             label = "Navigate";
             bindings = <
-&none  &trans  &trans  &trans  &trans  &trans          &kp HOME   &kp PAGE_DOWN    &kp PAGE_UP          &kp END         &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT_ARROW  &kp RA(ENTER)  &none
-&none  &trans  &trans  &trans  &trans  &trans            &trans          &trans         &trans           &trans     &kp DELETE  &none
-                       &trans   &mo 4  &trans            &trans          &trans         &trans
+&none  &trans  &trans  &trans  &trans     &trans          &kp HOME   &kp PAGE_DOWN    &kp PAGE_UP          &kp END         &trans  &none
+&none  &trans  &trans  &trans  &kp LCTRL  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT_ARROW  &kp RA(ENTER)  &none
+&none  &trans  &trans  &trans  &trans     &trans            &trans          &trans         &trans           &trans     &kp DELETE  &none
+                       &trans   &mo 4     &trans            &trans          &trans         &trans
             >;
         };
 
