@@ -11,6 +11,15 @@
 
 #define XXX &none
 #define ___ &trans
+#define COMBO_TERM_H 30
+
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM) \
+    combo_##NAME { \
+        timeout-ms = <TERM>; \
+        bindings = <BINDINGS>; \
+        key-positions = <KEYPOS>; \
+        layers = <LAYERS>; \
+    };
 
 &mt {
     tapping-term-ms = <120>;
@@ -36,31 +45,12 @@
         };
     };
 
-    combos { // combo for copy shortcut using 'x' and 'c'
+    combos { 
         compatible = "zmk,combos";
-        combo_copy {
-            timeout-ms = <50>;
-            key-positions = <21 22>;
-            bindings = <&kp LC(C)>;
-        };
-    };
 
-//    combos { // combo for paste shortcut using 'c' and 'v'
-//        compatible = "zmk,combos";
-//        combo_paste {
-//            timeout-ms = <50>;
-//            key-positions = <22 23>;
-//            bindings = <&kp LC(V)>;
-//        };
-//    };
-
-    combos { // combo for cut shortcut using 'v' and 'x'
-        compatible = "zmk,combos";
-        combo_cut {
-            timeout-ms = <50>;
-            key-positions = <21 23>;
-            bindings = <&kp LC(X)>;
-        };
+        COMBO(copy,  &kp LC(C), LB1 LB2, 0, COMBO_TERM_H)
+        COMBO(paste, &kp LC(V), LB2 LB3, 0, COMBO_TERM_H)
+        COMBO(cut,   &kp LC(X), LB1 LB3, 0, COMBO_TERM_H)
     };
 
     keymap {
