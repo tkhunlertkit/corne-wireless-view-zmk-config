@@ -45,23 +45,23 @@
         };
     };
 
-    combos { // combo for paste shortcut using 'c' and 'v'
-        compatible = "zmk,combos";
-        combo_paste {
-            timeout-ms = <50>;
-            key-positions = <22 23>;
-            bindings = <&kp LC(V)>;
-        };
-    };
-
-//    combos { // combo for cut shortcut using 'v' and 'x'
+//    combos { // combo for paste shortcut using 'c' and 'v'
 //        compatible = "zmk,combos";
-//        combo_cut {
+//        combo_paste {
 //            timeout-ms = <50>;
-//            key-positions = <21 23>;
-//            bindings = <&kp LC(X)>;
+//            key-positions = <22 23>;
+//            bindings = <&kp LC(V)>;
 //        };
 //    };
+
+    combos { // combo for cut shortcut using 'v' and 'x'
+        compatible = "zmk,combos";
+        combo_cut {
+            timeout-ms = <50>;
+            key-positions = <21 23>;
+            bindings = <&kp LC(X)>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
