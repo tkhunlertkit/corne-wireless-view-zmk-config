@@ -36,7 +36,7 @@
         };
     };
 
-    combos {
+    combos { // combo for copy shortcut using 'x' and 'c'
         compatible = "zmk,combos";
         combo_copy {
             timeout-ms = <50>;
@@ -45,7 +45,7 @@
         };
     };
 
-    combos {
+    combos { // combo for paste shortcut using 'c' and 'v'
         compatible = "zmk,combos";
         combo_paste {
             timeout-ms = <50>;
@@ -54,7 +54,7 @@
         };
     };
 
-//    combos {
+//    combos { // combo for cut shortcut using 'v' and 'x'
 //        compatible = "zmk,combos";
 //        combo_cut {
 //            timeout-ms = <50>;
