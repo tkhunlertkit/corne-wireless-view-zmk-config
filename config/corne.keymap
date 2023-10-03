@@ -54,6 +54,12 @@
             bindings = <&kp LC(C)>;
         };
 
+        combo_test {
+            timeout-ms = <150>;
+            key-positions = <0 1>;
+            bindings = <&kp LC(V)>;
+        };
+
         // COMBO(copy,  &kp LC(C), LB1 LB2, 0, COMBO_TERM_H)
         // COMBO(paste, &kp LC(V), LB2 LB3, 0, COMBO_TERM_H)
         // COMBO(cut,   &kp LC(X), LB1 LB3, 0, COMBO_TERM_H)
