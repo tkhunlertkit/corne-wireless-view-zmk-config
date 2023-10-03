@@ -48,9 +48,15 @@
     combos { 
         compatible = "zmk,combos";
 
-        COMBO(copy,  &kp LC(C), LB1 LB2, 0, COMBO_TERM_H)
-        COMBO(paste, &kp LC(V), LB2 LB3, 0, COMBO_TERM_H)
-        COMBO(cut,   &kp LC(X), LB1 LB3, 0, COMBO_TERM_H)
+        combo_copy {
+            timeout-ms = <50>;
+            key-positions = <21 22>;
+            bindings = <&kp LC(C)>;
+        };
+
+        // COMBO(copy,  &kp LC(C), LB1 LB2, 0, COMBO_TERM_H)
+        // COMBO(paste, &kp LC(V), LB2 LB3, 0, COMBO_TERM_H)
+        // COMBO(cut,   &kp LC(X), LB1 LB3, 0, COMBO_TERM_H)
     };
 
     keymap {
