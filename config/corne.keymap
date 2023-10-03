@@ -52,14 +52,14 @@
             timeout-ms = <50>;
             key-positions = <21 22>;
             bindings = <&kp LC(C)>;
-            layers = <-1>;
+            layers = <0 1 2 3 4>;
         };
 
         combo_test {
             timeout-ms = <150>;
             key-positions = <0 1>;
             bindings = <&kp SQT>;
-            layers = <-1>;
+            layers = <0 1 2 3 4>;
         };
 
         // COMBO(copy,  &kp LC(C), LB1 LB2, 0, COMBO_TERM_H)
