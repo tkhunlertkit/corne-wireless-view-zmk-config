@@ -45,10 +45,10 @@
 #define RB3 33
 #define RB4 34
 
-#define LH0 39  // left thumb keys
-#define LH1 38
-#define LH2 37
+#define LH0 38  // left thumb keys
+#define LH1 37
+#define LH2 36
 
-#define RH0 40  // right thumb keys
-#define RH1 41
-#define RH2 42
+#define RH0 39  // right thumb keys
+#define RH1 40
+#define RH2 41
