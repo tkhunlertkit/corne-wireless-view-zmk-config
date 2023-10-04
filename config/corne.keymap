@@ -59,8 +59,9 @@
         COMBO(cut,            &kp LC(X), LB1 LB3, DEF, COMBO_TERM_H) // x v -> cut
         COMBO(ctrl_r,         &kp LC(R), LM4 LT1, DEF, COMBO_TERM_H) // a r -> ctrl + r
         COMBO(ctrl_t,         &kp LC(T), LM4 LT0, DEF, COMBO_TERM_H) // a t -> ctrl + t
-        COMBO(ctrl_f,         &kp LC(F), LM4 LM1, DEF, COMBO_TERM_H) // a f -> ctrl + f
-        COMBO(win_shft_s, &kp LG(LS(S)), LH0 LM3, DEF, COMBO_TERM_H) // esc s -> win + shift + s
+        // COMBO(win_shft_s, &kp LG(LS(S)), LH0 LM3, DEF, COMBO_TERM_H) // esc s -> win + shift + s
+        // COMBO(ctrl_f,         &kp LC(F), LM4 LM1, DEF, COMBO_TERM_H) // a f -> ctrl + f
+        
     };
 
     conditional_layers {
