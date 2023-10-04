@@ -51,14 +51,15 @@
         };
     };
 
-    combos { 
+    combos { a
         compatible = "zmk,combos";
 
-        COMBO(copy,   &kp LC(C), LB2 LB3, DEF, COMBO_TERM_H) // c v
-        COMBO(paste,  &kp LC(V), LB1 LB2, DEF, COMBO_TERM_H) // x c
-        COMBO(cut,    &kp LC(X), LB1 LB3, DEF, COMBO_TERM_H) // x v
-        COMBO(ctrl_r, &kp LC(R), LM4 LT1, DEF, COMBO_TERM_H) // a r
-        COMBO(ctrl_t, &kp LC(T), LM4 LT0, DEF, COMBO_TERM_H) // a t
+        COMBO(copy,   &kp LC(C), LB2 LB3, DEF, COMBO_TERM_H) // c v -> copy
+        COMBO(paste,  &kp LC(V), LB1 LB2, DEF, COMBO_TERM_H) // x c -> paste
+        COMBO(cut,    &kp LC(X), LB1 LB3, DEF, COMBO_TERM_H) // x v -> cut
+        COMBO(ctrl_r, &kp LC(R), LM4 LT1, DEF, COMBO_TERM_H) // a r -> ctrl + r
+        COMBO(ctrl_t, &kp LC(T), LM4 LT0, DEF, COMBO_TERM_H) // a t -> ctrl + t
+        COMBO(ctrl_f, &kp LC(F), LM4 LM1, DEF, COMBO_TERM_H) // a f -> ctrl + f
     };
 
     conditional_layers {
