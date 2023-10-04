@@ -48,9 +48,11 @@
     combos { 
         compatible = "zmk,combos";
 
-        COMBO(copy,  &kp LC(C), LB2 LB3, 0, COMBO_TERM_H)
-        COMBO(paste, &kp LC(V), LB1 LB2, 0, COMBO_TERM_H)
-        COMBO(cut,   &kp LC(X), LB1 LB3, 0, COMBO_TERM_H)
+        COMBO(copy,   &kp LC(C), LB2 LB3, 0, COMBO_TERM_H) // c v
+        COMBO(paste,  &kp LC(V), LB1 LB2, 0, COMBO_TERM_H) // x c
+        COMBO(cut,    &kp LC(X), LB1 LB3, 0, COMBO_TERM_H) // x v
+        COMBO(ctrl_r, &kp LC(R), LM4 LT1, 0, COMBO_TERM_H) // a r
+        COMBO(ctrl_t, &kp LC(T), LM4 LT0, 0, COMBO_TERM_H) // a t
     };
 
     keymap {
