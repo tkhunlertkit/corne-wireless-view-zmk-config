@@ -57,22 +57,22 @@
         compatible = "zmk,combos";
 
         // combo on base WIN layer
-        COMBO(copy,           &kp LC(C), LM2 LM3, WIN, COMBO_TERM_H) // s d -> copy
-        COMBO(paste,          &kp LC(V), LM1 LM2, WIN, COMBO_TERM_H) // d f -> paste
-        COMBO(cut,            &kp LC(X), LM1 LM3, WIN, COMBO_TERM_H) // s f -> cut
-        COMBO(ctrl_r,         &kp LC(R), LM4 LT1, WIN, COMBO_TERM_H) // a r -> ctrl + r
-        COMBO(ctrl_t,         &kp LC(T), LM4 LT0, WIN, COMBO_TERM_H) // a t -> ctrl + t
-        COMBO(win_shft_s, &kp LG(LS(S)), LH0 LM3, WIN, COMBO_TERM_H) // esc s -> win + shift + s
-        COMBO(ctrl_f,         &kp LC(F), LM4 LM1, WIN, COMBO_TERM_H) // a f -> ctrl + f
+        COMBO(copy_win,           &kp LC(C), LM2 LM3, WIN, COMBO_TERM_H) // s d -> copy
+        COMBO(paste_win,          &kp LC(V), LM1 LM2, WIN, COMBO_TERM_H) // d f -> paste
+        COMBO(cut_win,            &kp LC(X), LM1 LM3, WIN, COMBO_TERM_H) // s f -> cut
+        COMBO(ctrl_r_win,         &kp LC(R), LM4 LT1, WIN, COMBO_TERM_H) // a r -> ctrl + r
+        COMBO(ctrl_t_win,         &kp LC(T), LM4 LT0, WIN, COMBO_TERM_H) // a t -> ctrl + t
+        COMBO(screenshot_win, &kp LG(LS(S)), LH0 LM3, WIN, COMBO_TERM_H) // esc s -> win + shift + s
+        COMBO(ctrl_f_win,         &kp LC(F), LM4 LM1, WIN, COMBO_TERM_H) // a f -> ctrl + f
 
         // combo on base MAC layer
-        COMBO(copy,           &kp LG(C), LM2 LM3, MAC, COMBO_TERM_H) // s d -> copy
-        COMBO(paste,          &kp LG(V), LM1 LM2, MAC, COMBO_TERM_H) // d f -> paste
-        COMBO(cut,            &kp LG(X), LM1 LM3, MAC, COMBO_TERM_H) // s f -> cut
-        COMBO(ctrl_r,         &kp LG(R), LM4 LT1, MAC, COMBO_TERM_H) // a r -> ctrl + r
-        COMBO(ctrl_t,         &kp LG(T), LM4 LT0, MAC, COMBO_TERM_H) // a t -> ctrl + t
-        COMBO(win_shft_s, &kp LG(LS(4)), LH0 LM3, MAC, COMBO_TERM_H) // esc s -> win + shift + s
-        COMBO(ctrl_f,         &kp LG(F), LM4 LM1, MAC, COMBO_TERM_H) // a f -> ctrl + f
+        COMBO(copy_mac,           &kp LG(C), LM2 LM3, MAC, COMBO_TERM_H) // s d -> copy
+        COMBO(paste_mac,          &kp LG(V), LM1 LM2, MAC, COMBO_TERM_H) // d f -> paste
+        COMBO(cut_mac,            &kp LG(X), LM1 LM3, MAC, COMBO_TERM_H) // s f -> cut
+        COMBO(ctrl_r_mac,         &kp LG(R), LM4 LT1, MAC, COMBO_TERM_H) // a r -> ctrl + r
+        COMBO(ctrl_t_mac,         &kp LG(T), LM4 LT0, MAC, COMBO_TERM_H) // a t -> ctrl + t
+        COMBO(screenshot_mac, &kp LG(LS(4)), LH0 LM3, MAC, COMBO_TERM_H) // esc s -> win + shift + s
+        COMBO(ctrl_f_mac,         &kp LG(F), LM4 LM1, MAC, COMBO_TERM_H) // a f -> ctrl + f
         
     };
 
