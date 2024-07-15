@@ -68,15 +68,12 @@
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
-        conf_layer {
+        conf_layer_from_nav_win {
             if-layers = <NUM NAV_WIN>;
             then-layer = <CONF>;
         };
-    };
-
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        conf_layer {
+   
+        conf_layer_from_nav_mac {
             if-layers = <NUM NAV_MAC>;
             then-layer = <CONF>;
         };
