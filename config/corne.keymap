@@ -69,7 +69,15 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
         conf_layer {
-            if-layers = <NUM NAV>;
+            if-layers = <NUM NAV_WIN>;
+            then-layer = <CONF>;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        conf_layer {
+            if-layers = <NUM NAV_MAC>;
             then-layer = <CONF>;
         };
     };
@@ -127,7 +135,7 @@
 
         // -----------------------------------------------------------------------------------------
         nav_layer {
-            label = "Navigate Win";
+            label = "Nav Win";
             bindings = <
             //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
                 ___          ___           ___           ___           ___           ___                    &kp HOME     &kp PG_DN     &kp PG_UP      &kp END         ___         ___
@@ -143,7 +151,7 @@
 
         // -----------------------------------------------------------------------------------------
         nav_layer {
-            label = "Navigate_mac";
+            label = "Nav mac";
             bindings = <
             //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
                 ___          ___           ___           ___           ___           ___                  &kp LA(LEFT)   &kp PG_DN     &kp PG_UP   &kp LA(RIGHT)      ___         ___
