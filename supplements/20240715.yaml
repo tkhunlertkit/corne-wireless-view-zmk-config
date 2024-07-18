@@ -1,0 +1,328 @@
+layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layers:
+  win:
+  - ['', Q, W, E, R, T, Y, U, I, O]
+  - - P
+    - ''
+    - ''
+    - A
+    - {t: S, h: LGUI}
+    - {t: D, h: LALT}
+    - {t: F, h: LCTRL}
+    - G
+    - H
+    - {t: J, h: RCTRL}
+  - - {t: K, h: RALT}
+    - {t: L, h: RGUI}
+    - ;
+    - ''
+    - ''
+    - {t: Z, h: LSHIFT}
+    - X
+    - C
+    - V
+    - {t: B, h: Ctl+ B}
+  - - N
+    - M
+    - ','
+    - .
+    - {t: /, h: RSHIFT}
+    - ''
+    - TAB
+    - {t: BSPC, h: num}
+    - {t: ESC, h: LSHIFT}
+    - ENTER
+  - - {t: SPACE, h: nav_layer_win}
+    - Function
+  mac:
+  - ['', Q, W, E, R, T, Y, U, I, O]
+  - - P
+    - ''
+    - ''
+    - A
+    - {t: S, h: LCTRL}
+    - {t: D, h: LALT}
+    - {t: F, h: LGUI}
+    - G
+    - H
+    - {t: J, h: RGUI}
+  - - {t: K, h: RALT}
+    - {t: L, h: RCTRL}
+    - ;
+    - ''
+    - ''
+    - {t: Z, h: LSHIFT}
+    - X
+    - C
+    - V
+    - {t: B, h: Ctl+ B}
+  - - N
+    - M
+    - ','
+    - .
+    - {t: /, h: RSHIFT}
+    - ''
+    - TAB
+    - {t: BSPC, h: num}
+    - {t: ESC, h: LSHIFT}
+    - ENTER
+  - - {t: SPACE, h: nav_layer_mac}
+    - Function
+  num:
+  - - {t: ▽, type: trans}
+    - '!'
+    - '@'
+    - '#'
+    - $
+    - '%'
+    - ^
+    - '&'
+    - '*'
+    - (
+  - - )
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    - '7'
+  - - '8'
+    - '9'
+    - '0'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - \
+    - '-'
+    - '='
+    - '`'
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - ''''
+    - '['
+    - ']'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  nav_layer_win:
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - HOME
+    - PG DN
+    - PG UP
+    - END
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - LCTRL
+    - {t: ▽, type: trans}
+    - LEFT
+    - DOWN
+  - - UP
+    - RIGHT
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - DELETE
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {type: held}
+    - {t: ▽, type: trans}
+  nav_layer_mac:
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - Gui+ LEFT
+    - PG DN
+    - PG UP
+    - Gui+ RIGHT
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - LALT
+    - {t: ▽, type: trans}
+    - LEFT
+    - DOWN
+  - - UP
+    - RIGHT
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - DELETE
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {type: held}
+    - {t: ▽, type: trans}
+  Function:
+  - - {t: ▽, type: trans}
+    - F1
+    - F2
+    - F3
+    - F4
+    - {t: ▽, type: trans}
+    - PREV
+    - VOL UP
+    - BRI INC
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - F5
+    - F6
+    - F7
+    - F8
+    - {t: ▽, type: trans}
+    - PP
+    - VOL DN
+  - - BRI DEC
+    - Gui+ L
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - F9
+    - F10
+    - F11
+    - F12
+    - F13
+  - - NEXT
+    - MUTE
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {type: held}
+  Bluetooth_and_reset:
+  - - {t: ▽, type: trans}
+    - {t: BT, h: '0'}
+    - {t: BT, h: '1'}
+    - {t: BT, h: '2'}
+    - {t: BT, h: '3'}
+    - {t: BT, h: '4'}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - BT PRV
+    - BT NXT
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '&sys_reset'
+    - {t: ▽, type: trans}
+    - {t: mac, h: toggle}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {type: held}
+    - BT CLR
+combos:
+- p: [15, 14]
+  k: Ctl+ C
+  l: [win]
+- p: [16, 15]
+  k: Ctl+ V
+  l: [win]
+- p: [16, 14]
+  k: Ctl+ X
+  l: [win]
+- p: [13, 4]
+  k: Ctl+ R
+  l: [win]
+- p: [13, 5]
+  k: Ctl+ T
+  l: [win]
+- p: [38, 14]
+  k: Gui+Sft+ S
+  l: [win]
+- p: [13, 16]
+  k: Ctl+ F
+  l: [win]
+- p: [15, 14]
+  k: Gui+ C
+  l: [mac]
+- p: [16, 15]
+  k: Gui+ V
+  l: [mac]
+- p: [16, 14]
+  k: Gui+ X
+  l: [mac]
+- p: [13, 4]
+  k: Gui+ R
+  l: [mac]
+- p: [13, 5]
+  k: Gui+ T
+  l: [mac]
+- p: [38, 14]
+  k: Gui+Sft+ 4
+  l: [mac]
+- p: [13, 16]
+  k: Gui+ F
+  l: [mac]
