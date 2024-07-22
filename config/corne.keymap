@@ -57,7 +57,7 @@
         cyberark_macro: cyberark_marco {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp W &kp O &kp R &kp K &kp TAB &kp TAB &kp DOWN &kp ENTER &kp ENTER>;
+            bindings = <&macro_tap &kp W &kp O &kp R &kp K &kp TAB &kp TAB &kp DOWN &kp DOWN &kp ENTER &kp ENTER>;
         };
     };
 
