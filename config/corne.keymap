@@ -57,7 +57,7 @@
         cyberark_macro: cyberark_marco {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp w &kp o &kp r &kp k &kp TAB &kp TAB &kp DOWN &kp ENTER &kp ENTER>;
+            bindings = <&macro_tap &kp W &kp O &kp R &kp K &kp TAB &kp TAB &kp DOWN &kp ENTER &kp ENTER>;
         };
     };
 
@@ -72,6 +72,7 @@
         COMBO(ctrl_t_win,         &kp LC(T), LM4 LT0, WIN, COMBO_TERM_H) // a t -> ctrl + t
         COMBO(screenshot_win, &kp LG(LS(S)), LH0 LM3, WIN, COMBO_TERM_H) // esc s -> win + shift + s
         COMBO(ctrl_f_win,         &kp LC(F), LM4 LM1, WIN, COMBO_TERM_H) // a f -> ctrl + f
+        COMBO(cyberark_win, &cyberark_macro, LH0 LT4, WIN, COMBO_TERM_H) // cyberark macro win layer
 
         // combo on base MAC layer
         COMBO(copy_mac,           &kp LG(C), LM2 LM3, MAC, COMBO_TERM_H) // s d -> copy
@@ -81,6 +82,7 @@
         COMBO(ctrl_t_mac,         &kp LG(T), LM4 LT0, MAC, COMBO_TERM_H) // a t -> ctrl + t
         COMBO(screenshot_mac, &kp LG(LS(4)), LH0 LM3, MAC, COMBO_TERM_H) // esc s -> win + shift + s
         COMBO(ctrl_f_mac,         &kp LG(F), LM4 LM1, MAC, COMBO_TERM_H) // a f -> ctrl + f
+        COMBO(cyberark_mac, &cyberark_macro, LH0 LT4, WIN, COMBO_TERM_H) // cyberark macro mac layer
         
     };
 
