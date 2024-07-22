@@ -53,6 +53,14 @@
         };
     };
 
+    macros {
+        cyberark_macro: cyberark_marco {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp w &kp o &kp r &kp k &kp TAB &kp TAB &kp DOWN &kp ENTER &kp ENTER>;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
