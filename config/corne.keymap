@@ -63,7 +63,7 @@
         download_path_macro: download_path_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp BSLH &kp BSLH &kp t &kp s &kp c &kp l &kp i &kp e &kp n &kp t &kp BSLH &kp Y &kp BSLH &kp U &kp s &kp e &kp r &kp s &kp BSLH &kp t &kp a &kp n &kp a &kp w &kp a &kp t &kp k &kp BSLH &kp D &kp o &kp w &kp n &kp l &kp o &kp a &kp d &kp s>;
+            bindings = <&macro_tap &kp BSLH &kp BSLH &kp T &kp S &kp C &kp L &kp I &kp E &kp N &kp T &kp BSLH &kp Y &kp BSLH &kp U &kp S &kp E &kp R &kp S &kp BSLH &kp T &kp A &kp N &kp A &kp W &kp A &kp T &kp K &kp BSLH &kp D &kp O &kp W &kp N &kp L &kp O &kp A &kp D &kp S>;
         };
     };
 
