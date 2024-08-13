@@ -59,30 +59,41 @@
             #binding-cells = <0>;
             bindings = <&macro_tap &kp W &kp O &kp R &kp K &kp TAB &kp TAB &kp DOWN &kp DOWN &kp ENTER &kp ENTER>;
         };
+
+        download_path_macro: download_path_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp BSLH &kp BSLH &kp t &kp s &kp c &kp l &kp i &kp e &kp n &kp t 
+                        &kp BSLH &kp Y &kp BSLH &kp U &kp s &kp e &kp r &kp s 
+                        &kp BSLH &kp t &kp a &kp n &kp a &kp w &kp a &kp t &kp k 
+                        &kp BSLH &kp D &kp o &kp w &kp n &kp l &kp o &kp a &kp d &kp s>;
+        };
     };
 
     combos {
         compatible = "zmk,combos";
 
         // combo on base WIN layer
-        COMBO(copy_win,           &kp LC(C), LM2 LM3, WIN, COMBO_TERM_H) // s d -> copy
-        COMBO(paste_win,          &kp LC(V), LM1 LM2, WIN, COMBO_TERM_H) // d f -> paste
-        COMBO(cut_win,            &kp LC(X), LM1 LM3, WIN, COMBO_TERM_H) // s f -> cut
-        COMBO(ctrl_r_win,         &kp LC(R), LM4 LT1, WIN, COMBO_TERM_H) // a r -> ctrl + r
-        COMBO(ctrl_t_win,         &kp LC(T), LM4 LT0, WIN, COMBO_TERM_H) // a t -> ctrl + t
-        COMBO(screenshot_win, &kp LG(LS(S)), LH0 LM3, WIN, COMBO_TERM_H) // esc s -> win + shift + s
-        COMBO(ctrl_f_win,         &kp LC(F), LM4 LM1, WIN, COMBO_TERM_H) // a f -> ctrl + f
-        COMBO(cyberark_win, &cyberark_macro, LH0 LT4, WIN, COMBO_TERM_H) // cyberark macro win layer
+        COMBO(copy_win,                     &kp LC(C), LM2 LM3, WIN, COMBO_TERM_H) // s d -> copy
+        COMBO(paste_win,                    &kp LC(V), LM1 LM2, WIN, COMBO_TERM_H) // d f -> paste
+        COMBO(cut_win,                      &kp LC(X), LM1 LM3, WIN, COMBO_TERM_H) // s f -> cut
+        COMBO(ctrl_r_win,                   &kp LC(R), LM4 LT1, WIN, COMBO_TERM_H) // a r -> ctrl + r
+        COMBO(ctrl_t_win,                   &kp LC(T), LM4 LT0, WIN, COMBO_TERM_H) // a t -> ctrl + t
+        COMBO(screenshot_win,           &kp LG(LS(S)), LH0 LM3, WIN, COMBO_TERM_H) // esc s -> win + shift + s
+        COMBO(ctrl_f_win,                   &kp LC(F), LM4 LM1, WIN, COMBO_TERM_H) // a f -> ctrl + f
+        COMBO(cyberark_win,           &cyberark_macro, LH0 LT4, WIN, COMBO_TERM_H) // cyberark macro win layer
+        COMBO(download_path_win, &download_path_macro, LH1 LT4, WIN, COMBO_TERM_H) // type download path
 
         // combo on base MAC layer
-        COMBO(copy_mac,           &kp LG(C), LM2 LM3, MAC, COMBO_TERM_H) // s d -> copy
-        COMBO(paste_mac,          &kp LG(V), LM1 LM2, MAC, COMBO_TERM_H) // d f -> paste
-        COMBO(cut_mac,            &kp LG(X), LM1 LM3, MAC, COMBO_TERM_H) // s f -> cut
-        COMBO(ctrl_r_mac,         &kp LG(R), LM4 LT1, MAC, COMBO_TERM_H) // a r -> ctrl + r
-        COMBO(ctrl_t_mac,         &kp LG(T), LM4 LT0, MAC, COMBO_TERM_H) // a t -> ctrl + t
-        COMBO(screenshot_mac, &kp LG(LS(4)), LH0 LM3, MAC, COMBO_TERM_H) // esc s -> win + shift + s
-        COMBO(ctrl_f_mac,         &kp LG(F), LM4 LM1, MAC, COMBO_TERM_H) // a f -> ctrl + f
-        COMBO(cyberark_mac, &cyberark_macro, LH0 LT4, WIN, COMBO_TERM_H) // cyberark macro mac layer
+        COMBO(copy_mac,                     &kp LG(C), LM2 LM3, MAC, COMBO_TERM_H) // s d -> copy
+        COMBO(paste_mac,                    &kp LG(V), LM1 LM2, MAC, COMBO_TERM_H) // d f -> paste
+        COMBO(cut_mac,                      &kp LG(X), LM1 LM3, MAC, COMBO_TERM_H) // s f -> cut
+        COMBO(ctrl_r_mac,                   &kp LG(R), LM4 LT1, MAC, COMBO_TERM_H) // a r -> ctrl + r
+        COMBO(ctrl_t_mac,                   &kp LG(T), LM4 LT0, MAC, COMBO_TERM_H) // a t -> ctrl + t
+        COMBO(screenshot_mac,           &kp LG(LS(4)), LH0 LM3, MAC, COMBO_TERM_H) // esc s -> win + shift + s
+        COMBO(ctrl_f_mac,                   &kp LG(F), LM4 LM1, MAC, COMBO_TERM_H) // a f -> ctrl + f
+        COMBO(cyberark_mac,           &cyberark_macro, LH0 LT4, MAC, COMBO_TERM_H) // cyberark macro mac layer
+        COMBO(download_path_mac, &download_path_macro, LH1 LT4, MAC, COMBO_TERM_H) // type download path
         
     };
 
