@@ -92,8 +92,9 @@
         COMBO(cut_mac,                      &kp LG(X), LM1 LM3, MAC, COMBO_TERM_H) // s f -> cut
         COMBO(ctrl_r_mac,                   &kp LG(R), LM4 LT1, MAC, COMBO_TERM_H) // a r -> ctrl + r
         COMBO(ctrl_t_mac,                   &kp LG(T), LM4 LT0, MAC, COMBO_TERM_H) // a t -> ctrl + t
-        COMBO(screenshot_mac,           &kp LG(LS(4)), LH0 LM3, MAC, COMBO_TERM_H) // esc s -> win + shift + s
-        COMBO(ctrl_f_mac,                   &kp LG(F), LM4 LM1, MAC, COMBO_TERM_H) // a f -> ctrl + f
+        COMBO(screenshot_mac,          &kp LG(LS(N4)), LH0 LM3, MAC, COMBO_TERM_H) // esc s -> win + shift + s
+        COMBO(ctrl_f_mac,                   &kp LG(F), LM4 LM1, MAC, COMBO_TERM_H) // a f -> cmd + f
+        COMBO(cmd_grave,                &kp LG(GRAVE), LM2 LB4, MAC, COMBO_TERM_H) // change language
         COMBO(cyberark_mac,           &cyberark_macro, LH0 LT4, MAC, COMBO_TERM_H) // cyberark macro mac layer
         COMBO(download_path_mac, &download_path_macro, LH0 LT3, MAC, COMBO_TERM_H) // type download path
         
@@ -138,7 +139,7 @@
             //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
                 XXX         &kp Q         &kp W         &kp E         &kp R         &kp T                     &kp Y         &kp U         &kp I         &kp O         &kp P       XXX
             //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-                XXX         &kp A       &ht LCTRL S   &ht LALT D    &ht LGUI F      &kp G                     &kp H      &ht RGUI J    &ht RALT K   &ht RCTRL L      &kp SEMI      XXX
+                XXX         &kp A       &ht LCTRL S   &ht LALT D    &ht LGUI F      &kp G                     &kp H      &ht LGUI J    &ht RALT K   &ht LCTRL L      &kp SEMI      XXX
             //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
                 XXX      &mt LSHIFT Z     &kp X         &kp C         &kp V      &ht LC(B) B                  &kp N         &kp M       &kp COMMA     &kp DOT   &mt RSHIFT FSLH   XXX
             //╰──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────╯
@@ -222,7 +223,7 @@
             //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
                 ___          ___           ___           ___           ___           ___                      ___           ___           ___           ___        &sys_reset     ___
             //╰──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────╯
-                                                      &tog MAC         ___           ___                      ___           ___        &bt BT_CLR
+                                                      &to MAC          ___         &to WIN                    ___           ___        &bt BT_CLR
             //                                     ╰─────────────┴─────────────┴─────────────╯ ╰──────╯ ╰─────────────┴─────────────┴─────────────╯    
             >;
         };
