@@ -58,7 +58,12 @@
         cyberark_macro: cyberark_marco {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp W &kp O &kp R &kp K &kp TAB &kp TAB &kp DOWN &kp DOWN &kp ENTER &kp ENTER>;
+            bindings 
+                = <&macro_tap &kp W &kp O &kp R &kp K >  
+                , <&macro_wait_time 100>
+                , <&kp TAB &kp TAB> 
+                , <&macro_wait_time 50>, <&kp DOWN &kp DOWN &kp ENTER &kp ENTER>
+                ;
         };
 
         download_path_macro: download_path_macro {
