@@ -85,6 +85,7 @@
                 , <&macro_tap &kp FSLH &kp QMARK &kp L &kp O &kp G &kp I &kp N &kp UNDER &kp H &kp I &kp N &kp T &kp EQUAL>
                 , <&macro_tap &kp T &kp A &kp N &kp A &kp W &kp A &kp T &kp K &kp PRCNT &kp N4 &kp N0 >
                 , <&macro_tap &kp B &kp U &kp M &kp R &kp U &kp N &kp G &kp R &kp A &kp D &kp PRCNT &kp N2 &kp E &kp C &kp O &kp M>
+                ;
         };
     };
 
