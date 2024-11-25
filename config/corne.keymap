@@ -75,6 +75,17 @@
                 , <&macro_tap &kp BSLH &kp D &kp O &kp W &kp N &kp L &kp O &kp A &kp D &kp S &kp ENTER>
                 ;
         };
+
+        one_drive_https: one_drive_https {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp H &kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH &kp B &kp U &kp M &kp R &kp U &kp N &kp G &kp R &kp A &kp D>
+                , <&macro_tap &kp MINUS &kp M &kp Y &kp PERIOD &kp S &kp H &kp A &kp R &kp E &kp P &kp O &kp I &kp N &kp T &kp PERIOD &kp C &kp O &kp M>
+                , <&macro_tap &kp FSLH &kp QMARK &kp L &kp O &kp G &kp I &kp N &kp UNDER &kp H &kp I &kp N &kp T &kp EQUAL>
+                , <&macro_tap &kp T &kp A &kp N &kp A &kp W &kp A &kp T &kp K &kp PRCNT &kp N4 &kp N0 >
+                , <&macro_tap &kp B &kp U &kp M &kp R &kp U &kp N &kp G &kp R &kp A &kp D &kp PRCNT &kp N2 &kp E &kp C &kp O &kp M>
+        };
     };
 
     combos {
