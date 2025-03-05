@@ -99,7 +99,7 @@
         COMBO(       ctrl_t_mac,            &kp LG(T), LM4 LT0, MAC, COMBO_TERM_H) // a t -> ctrl + t
         COMBO(       ctrl_f_mac,            &kp LG(F), LM4 LM1, MAC, COMBO_TERM_H) // a f -> cmd + f
         COMBO(        cmd_grave,        &kp LG(GRAVE), LM2 LB4, MAC, COMBO_TERM_H) // change language
-        COMBO(   screenshot_mac,       &kp LG(LS(N4)), LH0 LM3, MAC, COMBO_TERM_H) // esc s -> win + shift + s
+        COMBO(   screenshot_mac,       &kp LG(DOLLAR), LH0 LM3, MAC, COMBO_TERM_H) // esc s -> win + shift + s
         COMBO(     cyberark_mac,      &cyberark_macro, LH0 LT4, MAC, COMBO_TERM_H) // cyberark macro mac layer
         COMBO(download_path_mac, &download_path_macro, LH0 LT3, MAC, COMBO_TERM_H) // type download path
         
@@ -132,7 +132,7 @@
             //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
                 XXX      &mt LSHIFT Z     &kp X         &kp C         &kp V      &ht LC(B) B                  &kp N         &kp M       &kp COMMA     &kp DOT   &mt RSHIFT FSLH   XXX
             //╰──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────╯
-                                                       &kp TAB    &lt NUM BSPC  &mt LSHIFT ESC            &kp ENTER  &lt NAV_WIN SPACE  &mo FUNC
+                                                       &kp TAB    &lt NUM BSPC     &kp ESC                 &kp ENTER  &lt NAV_WIN SPACE  &mo FUNC
             //                                     ╰─────────────┴─────────────┴─────────────╯ ╰──────╯ ╰─────────────┴─────────────┴─────────────╯                         
             >;
         };
@@ -148,7 +148,7 @@
             //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
                 XXX      &mt LSHIFT Z     &kp X         &kp C         &kp V      &ht LC(B) B                  &kp N         &kp M       &kp COMMA     &kp DOT   &mt RSHIFT FSLH   XXX
             //╰──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────╯
-                                                       &kp TAB    &lt NUM BSPC  &mt LSHIFT ESC            &kp ENTER  &lt NAV_MAC SPACE  &mo FUNC
+                                                       &kp TAB    &lt NUM BSPC     &kp ESC                 &kp ENTER  &lt NAV_MAC SPACE  &mo FUNC
             //                                     ╰─────────────┴─────────────┴─────────────╯ ╰──────╯ ╰─────────────┴─────────────┴─────────────╯                         
             >;
         };
