@@ -80,9 +80,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp L &kp G &kp W &kp F &kp F &kp V &kp K &kp 6 &kp 4 &kp R &kp T &kp 9 &kp 0 &kp 2 &kp 2 &kp 1 &kp 1>
-                , <&macro_tap &kp TAB &kp G &kp W &kp M &kp TAB &kp 0 &kp 9 &kp 7 &kp 0 &kp 0 &kp 9 &kp 4 &kp 4 &kp 6 &kp 0>
-                , <&macro_tap &kp TAB &kp 2 &kp 8 &kp 9 &kp ENTER>
+                = <&macro_tap &kp L &kp G &kp W &kp F &kp F &kp V &kp K &kp N6 &kp N4 &kp R &kp T &kp N9 &kp N0 &kp N2 &kp N2 &kp N1 &kp N1>
+                , <&macro_tap &kp TAB &kp G &kp W &kp M &kp TAB &kp N0 &kp N9 &kp N7 &kp N0 &kp N0 &kp N9 &kp N4 &kp N4 &kp N6 &kp N0>
+                , <&macro_tap &kp TAB &kp N2 &kp N8 &kp N9 &kp ENTER>
                 ;
         };
     };
