@@ -75,6 +75,15 @@
                 , <&macro_tap &kp BSLH &kp D &kp O &kp W &kp N &kp L &kp O &kp A &kp D &kp S &kp ENTER>
                 ;
         };
+
+        vehicle_plate_reserve_macro: vehicle_plate_reserve_macro {
+            compatible = "zmk,behavior-macro";
+            bindings
+                = <&macro_tap &kp l &kp g &kp w &kp f &kp f &kp v &kp k &kp 6 &kp 4 &kp r &kp t &kp 9 &kp 0 &kp 2 &kp 2 &kp 1 &kp 1>
+                , <&macro_tap &kp TAB &kp g &kp w &kp m &kp TAB &kp 0 &kp 9 &kp 7 &kp 0 &kp 0 &kp 9 &kp 4 &kp 4 &kp 6 &kp 0>
+                , <&macro_tap &kp TAB &kp 2 &kp 8 &kp 9 &kp ENTER>
+                ;
+        };
     };
 
     combos {
