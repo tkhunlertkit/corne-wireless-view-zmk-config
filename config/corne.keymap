@@ -76,7 +76,7 @@
                 ;
         };
 
-        vehicle_plate_reserve_macro: vehicle_plate_reserve_macro {
+        license_plate_macro: license_plate_macro {
             compatible = "zmk,behavior-macro";
             bindings
                 = <&macro_tap &kp l &kp g &kp w &kp f &kp f &kp v &kp k &kp 6 &kp 4 &kp r &kp t &kp 9 &kp 0 &kp 2 &kp 2 &kp 1 &kp 1>
@@ -99,6 +99,7 @@
         COMBO(       ctrl_f_win,            &kp LC(F), LM4 LM1, WIN, COMBO_TERM_H) // a f -> ctrl + f
         COMBO(     cyberark_win,      &cyberark_macro, LH0 LT4, WIN, COMBO_TERM_H) // cyberark macro win layer
         COMBO(download_path_win, &download_path_macro, LH0 LT3, WIN, COMBO_TERM_H) // type download path
+        COMBO(license_plate_win, &license_plate_macro, LH0 LT1, WIN, COMBO_TERM_H) // automate license plate reservation
 
         // combo on base MAC layer
         COMBO(         copy_mac,            &kp LG(C), LM2 LM3, MAC, COMBO_TERM_H) // s d -> copy
@@ -111,6 +112,7 @@
         COMBO(   screenshot_mac,       &kp LG(DOLLAR), LH0 LM3, MAC, COMBO_TERM_H) // esc s -> win + shift + s
         COMBO(     cyberark_mac,      &cyberark_macro, LH0 LT4, MAC, COMBO_TERM_H) // cyberark macro mac layer
         COMBO(download_path_mac, &download_path_macro, LH0 LT3, MAC, COMBO_TERM_H) // type download path
+        COMBO(license_plate_mac, &license_plate_macro, LH0 LT1, MAC, COMBO_TERM_H) // automate license plate reservation
     };
 
     conditional_layers {
