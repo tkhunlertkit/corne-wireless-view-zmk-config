@@ -68,6 +68,8 @@
 
         download_path_macro: download_path_macro {
             compatible = "zmk,behavior-macro";
+            tap-ms = <1>;
+            wait-ms = <1>;
             #binding-cells = <0>;
             bindings 
                 = <&macro_tap &kp BSLH &kp BSLH &kp T &kp S &kp C &kp L &kp I &kp E &kp N &kp T &kp BSLH &kp Y>
