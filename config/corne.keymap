@@ -68,8 +68,8 @@
 
         download_path_macro: download_path_macro {
             compatible = "zmk,behavior-macro";
-            tap-ms = <1>;
-            wait-ms = <1>;
+            tap-ms = <5>;
+            wait-ms = <5>;
             #binding-cells = <0>;
             bindings 
                 = <&macro_tap &kp BSLH &kp BSLH &kp T &kp S &kp C &kp L &kp I &kp E &kp N &kp T &kp BSLH &kp Y>
@@ -80,8 +80,8 @@
 
         license_plate_macro: license_plate_macro {
             compatible = "zmk,behavior-macro";
-            wait-ms = <1>;
-            tap-ms = <1>;
+            wait-ms = <5>;
+            tap-ms = <5>;
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp L &kp G &kp W &kp F &kp F &kp V &kp K &kp N6 &kp N4 &kp R &kp T &kp N9 &kp N0 &kp N2 &kp N2 &kp N1 &kp N1>
