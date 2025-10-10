@@ -85,7 +85,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp L &kp G &kp W &kp F &kp F &kp V &kp K &kp N6 &kp N4 &kp R &kp T &kp N9 &kp N0 &kp N2 &kp N2 &kp N1 &kp N1>
-                , <&macro_tap &kp TAB &kp G &kp W &kp M &kp TAB &kp N0 &kp N9 &kp N7 &kp N0 &kp N0 &kp N9 &kp N4 &kp N4 &kp N6 &kp N0>
+                , <&macro_tap &kp TAB &kp O &kp R &kp A &kp TAB &kp N0 &kp N9 &kp N7 &kp N0 &kp N0 &kp N9 &kp N4 &kp N4 &kp N6 &kp N0>
                 , <&macro_tap &kp TAB &kp N2 &kp N8 &kp N9 &kp ENTER>
                 ;
         };
