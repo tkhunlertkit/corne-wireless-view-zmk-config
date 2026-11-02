@@ -62,7 +62,8 @@
                 = <&macro_tap &kp W &kp O &kp R &kp K >
                 , <&macro_wait_time 100>
                 , <&kp TAB &kp TAB>
-                , <&macro_wait_time 50>, <&kp DOWN &kp DOWN &kp ENTER &kp ENTER>
+                , <&macro_wait_time 50>
+                , <&kp DOWN &kp DOWN &kp TAB &kp TAB &kp TAB &kp TAB &kp ENTER>
                 ;
         };
 
